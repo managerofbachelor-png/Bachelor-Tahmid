@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Bachelor Tahmid Social Media Brief</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700;9..40,800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fdfcf8; --surface:#ffffff; --surface2:#f6f3ec; --ink:#14161a; --muted:#5d6573; --faint:#8a919e;
+  --line:#e7e2d6; --line2:#ddd6c4;
+  --red:#d9232e; --red-soft:#fdecec; --teal:#0e7a67; --teal-soft:#e6f4f0; --amber:#9a6206; --amber-soft:#fdf3d7;
+  --blue:#1d4ed8; --radius:18px;
+  --shadow:0 10px 30px rgba(20,22,26,.07);
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0e1013; --surface:#171a1f; --surface2:#1e2229; --ink:#f2f3f5; --muted:#a7aeba; --faint:#7d8694; --line:#262b33; --line2:#323945; --red-soft:#2b1719; --teal-soft:#122a26; --amber-soft:#2b2312; --shadow:0 10px 30px rgba(0,0,0,.35); }
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"DM Sans",system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:var(--blue);text-decoration:none} a:hover{text-decoration:underline}
+@media (prefers-color-scheme: dark){ a{color:#8ab4ff} }
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px 64px}
+.mono{font-family:"JetBrains Mono",monospace}
+
+/* Hero */
+.hero{padding:36px 0 8px}
+.kicker{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-size:11px;letter-spacing:.14em;font-weight:800;text-transform:uppercase;color:var(--muted)}
+.kicker .dot{width:7px;height:7px;border-radius:50%;background:var(--red);display:inline-block}
+.kicker .pill{letter-spacing:.02em;text-transform:none;font-size:12px;font-weight:700;background:var(--surface);border:1px solid var(--line);padding:5px 10px;border-radius:999px;color:var(--ink)}
+h1{font-family:"DM Serif Display",Georgia,serif;font-weight:400;font-size:clamp(44px,7vw,76px);line-height:.95;letter-spacing:-.02em;margin:16px 0 10px}
+h1 em{font-style:italic;color:var(--red)}
+.lede{font-size:clamp(17px,2.2vw,20px);line-height:1.55;color:var(--muted);max-width:760px;margin:0}
+.lede strong{color:var(--ink)}
+.verdict{margin-top:22px;background:var(--ink);color:#fff;border-radius:20px;padding:22px 22px 20px;display:grid;grid-template-columns:1.2fr .8fr;gap:20px}
+@media (prefers-color-scheme: dark){ .verdict{background:#f2f3f5;color:#111} }
+.verdict h2{margin:0 0 8px;font-size:13px;letter-spacing:.12em;text-transform:uppercase;opacity:.75}
+.verdict p{margin:0;font-size:17px;line-height:1.55}
+.verdict p strong{background:rgba(255,255,255,.16);padding:1px 6px;border-radius:6px}
+@media (prefers-color-scheme: dark){ .verdict p strong{background:rgba(0,0,0,.08)} }
+.verdict ul{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.verdict li{font-size:14px;line-height:1.45;border-top:1px solid rgba(255,255,255,.18);padding-top:10px}
+@media (prefers-color-scheme: dark){ .verdict li{border-top-color:rgba(0,0,0,.12)} }
+.verdict li:first-child{border-top:0;padding-top:0}
+.verdict li b{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;opacity:.7;margin-bottom:2px}
+@media(max-width:720px){.verdict{grid-template-columns:1fr}}
+
+/* Stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:14px}
+@media(max-width:820px){.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:420px){.stats{grid-template-columns:1fr 1fr}}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 16px 14px;box-shadow:var(--shadow)}
+.stat .num{font-family:"DM Serif Display",serif;font-size:36px;line-height:1}
+.stat .num small{font-size:18px;color:var(--muted)}
+.stat .label{font-weight:800;font-size:13px;margin-top:6px}
+.stat .sub{font-size:12.5px;color:var(--muted);line-height:1.45;margin-top:2px}
+
+/* Sections */
+section{margin-top:40px}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:14px}
+.sec-head h2{font-family:"DM Serif Display",serif;font-weight:400;font-size:32px;line-height:1;margin:0}
+.sec-head p{margin:6px 0 0;color:var(--muted);max-width:640px;font-size:14.5px}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+.filters button{appearance:none;border:1px solid var(--line2);background:var(--surface);color:var(--ink);padding:8px 13px;border-radius:999px;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+.filters button.active{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.filters button:focus-visible, a:focus-visible{outline:2px solid var(--red);outline-offset:2px}
+
+/* Platform grid */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+@media(max-width:760px){.grid{grid-template-columns:1fr}}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;box-shadow:var(--shadow)}
+.card.hidden{display:none}
+.card-top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start}
+.plat{display:flex;gap:12px;align-items:center;min-width:0}
+.avatar{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;font-weight:800;font-size:15px;color:#fff;flex:0 0 auto}
+.av-yt{background:#d9232e}.av-ig{background:#7c3aed;background:linear-gradient(135deg,#f59e0b,#ec4899,#7c3aed)}.av-tt{background:#111}.av-fb{background:#1877f2}.av-x{background:#111}.av-ru{background:#f26522}.av-bi{background:#00a1d6}.av-li{background:#0a66c2}
+@media (prefers-color-scheme: dark){ .av-tt,.av-x{background:#e8e8e8;color:#111} }
+.plat h3{margin:0;font-size:17px;line-height:1.1}
+.plat .handle{font-size:13px;color:var(--muted);word-break:break-all}
+.badge{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;padding:6px 9px;border-radius:999px;white-space:nowrap}
+.badge.ok{background:var(--teal-soft);color:var(--teal);border:1px solid color-mix(in srgb,var(--teal) 25%, transparent)}
+.badge.no{background:var(--amber-soft);color:var(--amber);border:1px solid color-mix(in srgb,var(--amber) 25%, transparent)}
+.metrics{display:flex;gap:18px;flex-wrap:wrap;margin:14px 0 10px;padding:12px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.metrics div{min-width:86px}
+.metrics b{display:block;font-size:20px;line-height:1}
+.metrics span{font-size:11.5px;color:var(--muted);font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.card p{margin:0;font-size:14.5px;color:var(--muted);line-height:1.55}
+.card p strong{color:var(--ink)}
+.source{margin-top:12px;font-size:12px;color:var(--faint);line-height:1.45}
+.source a{font-size:12px;word-break:break-all}
+.quote{margin:12px 0 0;background:var(--surface2);border-radius:12px;padding:12px 14px;font-size:14px;line-height:1.55;color:var(--ink)}
+.quote span{display:block;font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:4px}
+
+/* Two col */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:760px){.two{grid-template-columns:1fr}}
+.panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.panel h3{margin:0 0 12px;font-size:16px}
+.panel ul{margin:0;padding-left:18px;display:grid;gap:9px}
+.panel li{font-size:14.5px;line-height:1.55;color:var(--muted)}
+.panel li strong{color:var(--ink)}
+.panel.good h3{color:var(--teal)} .panel.gap h3{color:var(--red)}
+
+/* Chart panels */
+.chart-card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+.chart-card h3{margin:0;font-size:16px}
+.chart-card .cap{font-size:13px;color:var(--muted);margin:4px 0 14px;line-height:1.5}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:12.5px;font-weight:700;color:var(--muted);margin-bottom:10px}
+.legend i{width:12px;height:12px;border-radius:3px;display:inline-block;vertical-align:-1px;margin-right:6px}
+.bar-row{display:grid;grid-template-columns:92px 1fr 64px;gap:10px;align-items:center;margin:10px 0;font-size:13.5px}
+.bar-row .name{font-weight:700}
+.bar-track{height:14px;background:var(--surface2);border-radius:999px;overflow:hidden;border:1px solid var(--line)}
+.bar-fill{height:100%;border-radius:999px;background:var(--red)}
+.bar-fill.ig{background:#a855f7}.bar-fill.fb{background:#1877f2}.bar-fill.tt{background:var(--ink)}
+.bar-row .val{font-family:"JetBrains Mono",monospace;font-weight:700;text-align:right}
+@media(max-width:520px){.bar-row{grid-template-columns:76px 1fr 52px}}
+
+/* Videos */
+.video-list{display:grid;gap:0}
+.video{display:flex;justify-content:space-between;gap:14px;padding:11px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+.video:last-child{border-bottom:0}
+.video .t{font-weight:600;line-height:1.4}
+.video .m{white-space:nowrap;color:var(--muted);font-size:13px;text-align:right}
+.video .m b{color:var(--ink);display:block;font-size:14px}
+.goals{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.goals span{font-size:12.5px;font-weight:700;padding:6px 9px;border-radius:999px;background:var(--surface2);border:1px solid var(--line)}
+.goals span.done{background:var(--teal-soft);color:var(--teal);border-color:transparent}
+.goals span.next{background:var(--amber-soft);color:var(--amber);border-color:transparent}
+
+/* Table-like inconsistencies */
+.rows{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;background:var(--surface);box-shadow:var(--shadow)}
+.row{display:grid;grid-template-columns:170px 1fr;gap:0;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row .k{padding:14px 16px;font-weight:800;font-size:13px;background:var(--surface2);border-right:1px solid var(--line)}
+.row .v{padding:14px 16px;font-size:14.5px;color:var(--muted);line-height:1.55}
+.row .v strong{color:var(--ink)}
+@media(max-width:640px){.row{grid-template-columns:1fr}.row .k{border-right:0;border-bottom:1px solid var(--line)}}
+
+.note{background:var(--amber-soft);border:1px solid color-mix(in srgb,var(--amber) 22%, transparent);border-radius:14px;padding:14px 16px;font-size:14px;line-height:1.55;color:var(--ink)}
+.note strong{color:var(--amber)}
+footer{margin-top:42px;border-top:1px solid var(--line);padding-top:18px}
+footer h3{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+footer ul{margin:0;padding-left:18px;display:grid;gap:6px;font-size:13px;color:var(--muted);line-height:1.5}
+footer a{word-break:break-all}
+.small{font-size:12.5px;color:var(--faint);margin-top:14px;line-height:1.55}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="kicker"><span class="dot"></span> Research brief &nbsp;·&nbsp; Public profiles only <span class="pill">Snapshot: 7 Nov 2026</span> <span class="pill">8 profiles supplied</span></div>
+    <h1>Bachelor <em>Tahmid</em></h1>
+    <p class="lede">A Dhaka bachelor-life creator whose real home is <strong>YouTube</strong> — raw daily vlogs, street food, thrift hunts and friend vlogs — with his <strong>largest audience on Instagram</strong>. Everywhere else, the footprint is either just starting out or could not be verified from public pages.</p>
+
+    <div class="verdict" role="region" aria-label="Bottom line">
+      <div>
+        <h2>The bottom line</h2>
+        <p>This is currently a <strong>1.5-platform footprint</strong>, not an 8-platform one. YouTube does the work — <strong>295 videos</strong> and a regular cadence — Instagram holds the people — <strong>982 followers</strong> — and TikTok &amp; Facebook have the handles but almost no audience yet.</p>
+      </div>
+      <ul>
+        <li><b>Consistent brand</b>“Raw, unfiltered, unapologetically me” — Dhaka student / bachelor life across every verifiable profile.</li>
+        <li><b>Biggest gap</b>Per-video views are mostly under 100 on YouTube, despite the high output.</li>
+        <li><b>Fix first</b>One name spelling and one handle pattern everywhere — search is currently split three ways.</li>
+      </ul>
+    </div>
+
+    <div class="stats" aria-label="Key numbers">
+      <div class="stat"><div class="num">982</div><div class="label">Instagram followers</div><div class="sub">Largest audience found. @bachelortahmid, creator account.</div></div>
+      <div class="stat"><div class="num">601 <small>subs</small></div><div class="label">YouTube — the hub</div><div class="sub">295 videos · 370,853 total views (SocialCounts, 7 Nov 2026).</div></div>
+      <div class="stat"><div class="num">4 <small>/ 8</small></div><div class="label">Profiles verified</div><div class="sub">YouTube, Instagram, TikTok &amp; Facebook returned public data.</div></div>
+      <div class="stat"><div class="num">~2–3 <small>/ week</small></div><div class="label">YouTube cadence</div><div class="sub">6 videos in the snapshot list below are dated within the last 14 days.</div></div>
+    </div>
+  </header>
+
+  <!-- Audience comparison -->
+  <section aria-labelledby="aud-h">
+    <div class="sec-head"><div><h2 id="aud-h">Where the audience actually is</h2><p>Verified follower / subscriber counts only. X, Rumble, Bilibili and LinkedIn returned no public count, so they are not plotted as zero — they are marked unverified below.</p></div></div>
+    <div class="chart-card">
+      <h3>Followers / subscribers by platform</h3>
+      <p class="cap">Index fetches read 7 Nov 2026. Instagram is 1.6× YouTube; TikTok and Facebook together account for 9 followers.</p>
+      <div class="bar-row"><div class="name">Instagram</div><div class="bar-track"><div class="bar-fill ig" style="width:100%"></div></div><div class="val">982</div></div>
+      <div class="bar-row"><div class="name">YouTube</div><div class="bar-track"><div class="bar-fill" style="width:61.2%"></div></div><div class="val">601</div></div>
+      <div class="bar-row"><div class="name">Facebook</div><div class="bar-track"><div class="bar-fill fb" style="width:2%"></div></div><div class="val">7</div></div>
+      <div class="bar-row"><div class="name">TikTok</div><div class="bar-track"><div class="bar-fill tt" style="width:1.2%"></div></div><div class="val">2</div></div>
+      <p class="cap" style="margin:12px 0 0">Cross-linking exists between profiles, but the audience has not transferred with it — that mismatch is the central story of this brief.</p>
+    </div>
+  </section>
+
+  <!-- Platform grid -->
+  <section aria-labelledby="plat-h">
+    <div class="sec-head">
+      <div><h2 id="plat-h">All eight profiles, profile by profile</h2><p>Tap a filter to focus. “Verified” means public data was returned on 7 Nov 2026; “Unverified” means it was not — not that the account does not exist.</p></div>
+      <div class="filters" role="group" aria-label="Filter platforms">
+        <button class="active" data-filter="all">All 8</button>
+        <button data-filter="verified">Verified · 4</button>
+        <button data-filter="unverified">Unverified · 4</button>
+      </div>
+    </div>
+
+    <div class="grid" id="platformGrid">
+      <!-- YouTube -->
+      <article class="card" data-status="verified">
+        <div class="card-top"><div class="plat"><div class="avatar av-yt">YT</div><div><h3>YouTube</h3><div class="handle">@BachelorTahmid</div></div></div><span class="badge ok">Verified</span></div>
+        <div class="metrics"><div><b>601</b><span>Subscribers</span></div><div><b>295</b><span>Videos</span></div><div><b>370,853</b><span>Total views</span></div></div>
+        <p><strong>The home base.</strong> Raw Dhaka daily vlogs — street food hunts, thrift shopping, cafés, trade fair, budget challenges, birthday / friend vlogs, occasional geopolitics, plus VALORANT livestreams under a “Respawn Tahmid” banner. Keywords: <em>daily vlog bangladesh, dhaka vlog, student life bangladesh, bachelor life dhaka</em>.</p>
+        <div class="quote"><span>Channel bio — via SocialCounts</span>“Yo, I'm Tahmid a bachelor living the real Dhaka life 🇧🇩 This channel is raw, unfiltered, and unapologetically me. Vlogs, street food hunts, geopolitics, funny moments, and everything in between. No script. No filter. Just real life.” · 📍 Dhaka · 🎓 Aeronautical Engineering Student · “New video every week”</div>
+        <div class="source">Source: <a href="https://www.youtube.com/@BachelorTahmid" target="_blank" rel="noopener">youtube.com/@BachelorTahmid</a> (index fetch, 7 Nov 2026) &amp; SocialCounts tracker — a third-party tracker, not YouTube itself.</div>
+      </article>
+
+      <!-- Instagram -->
+      <article class="card" data-status="verified">
+        <div class="card-top"><div class="plat"><div class="avatar av-ig">IG</div><div><h3>Instagram</h3><div class="handle">@bachelortahmid</div></div></div><span class="badge ok">Verified</span></div>
+        <div class="metrics"><div><b>982</b><span>Followers</span></div><div><b>62</b><span>Following</span></div><div><b>Creator</b><span>Account type</span></div></div>
+        <p><strong>Largest audience, least visible detail.</strong> Display name is the full real name — <strong>“Thufazzal Islam Tahmid”</strong> (note the spelling, see inconsistencies below). The fetch returned counts only: no bio text, post count or recent posts were publicly retrievable from this source, so themes and frequency on Instagram itself could not be established here.</p>
+        <p style="margin-top:8px">Website listed: linktr.ee/bachelortahmid — the Linktree itself could not be opened in the research, so its contents are unverified.</p>
+        <div class="source">Source: <a href="https://www.instagram.com/bachelortahmid/" target="_blank" rel="noopener">instagram.com/bachelortahmid</a> (index fetch, read 7 Nov 2026). Cross-linked from YouTube descriptions as “📸 Instagram: @bachelortahmid”.</div>
+      </article>
+
+      <!-- TikTok -->
+      <article class="card" data-status="verified">
+        <div class="card-top"><div class="plat"><div class="avatar av-tt">TT</div><div><h3>TikTok</h3><div class="handle">@bachelor_tahmid</div></div></div><span class="badge ok">Verified</span></div>
+        <div class="metrics"><div><b>2</b><span>Followers</span></div><div><b>19</b><span>Videos</span></div><div><b>94</b><span>Total likes</span></div></div>
+        <p><strong>Handle claimed, audience not yet built.</strong> Note the underscore — this is the only supplied profile that uses <strong>bachelor_tahmid</strong>. No video titles or topics were returned, so themes beyond the bio and posting frequency cannot be established. Not a verified TikTok account.</p>
+        <div class="quote"><span>TikTok bio</span>“Stories, chaos, food &amp; real life 🎥 / PR / Promotions welcome 📩 / YT: youtube.com/@bachelortahmid”</div>
+        <div class="source">Source: <a href="https://www.tiktok.com/@bachelor_tahmid" target="_blank" rel="noopener">tiktok.com/@bachelor_tahmid</a> (index fetch, crawled 7 Nov 2026). Caution: a different account, @bachelor.tahmid (“ONLY TAHMID MUNNA”), also appears in search — do not conflate.</div>
+      </article>
+
+      <!-- Facebook -->
+      <article class="card" data-status="verified">
+        <div class="card-top"><div class="plat"><div class="avatar av-fb">FB</div><div><h3>Facebook</h3><div class="handle">/bachelortahmid</div></div></div><span class="badge ok">Verified</span></div>
+        <div class="metrics"><div><b>7</b><span>Followers</span></div><div><b>Professional</b><span>Account type</span></div></div>
+        <p><strong>Essentially a placeholder.</strong> Display name “Bachelor Tahmid”. No bio / about text, post count or recent posts were returned, so Facebook content and frequency are not publicly visible from this source. The handle is cross-linked from YouTube descriptions (“📘 Facebook: /bachelortahmid”).</p>
+        <p style="margin-top:8px">Separate: a <strong>“Respawn Tahmid”</strong> Facebook page (~500 followers) posts VALORANT reels — a gaming page under a different name, not this profile.</p>
+        <div class="source">Source: <a href="https://www.facebook.com/bachelortahmid" target="_blank" rel="noopener">facebook.com/bachelortahmid</a> (index fetch, read 7 Nov 2026).</div>
+      </article>
+
+      <!-- X -->
+      <article class="card" data-status="unverified">
+        <div class="card-top"><div class="plat"><div class="avatar av-x">X</div><div><h3>X (Twitter)</h3><div class="handle">@BachelorTahmid</div></div></div><span class="badge no">Unverified</span></div>
+        <p><strong>No public data found.</strong> Direct fetch was blocked and web search returned no profile data (bio, followers, posts) for this handle. Two indirect mentions do not confirm it: a Polyhedra campaign winners list names <strong>@Bachelor_Tahmid</strong> (with underscore) — unconfirmed as the same account — and Telegram’s “Bachelor Traders” lists @BachelorTahmid as a contact.</p>
+        <p style="margin-top:8px"><strong>Identity conflict to resolve:</strong> the web3 profile tied to this YouTube channel (web3.bio / tahmid.farcaster) lists its verified X as <strong>amir_insaan</strong>, a different handle. Do not assume x.com/BachelorTahmid is the active X presence.</p>
+        <div class="source">Supplied: <a href="https://x.com/BachelorTahmid" target="_blank" rel="noopener">x.com/BachelorTahmid</a> — fetch blocked; no profile data in search, 7 Nov 2026.</div>
+      </article>
+
+      <!-- Rumble -->
+      <article class="card" data-status="unverified">
+        <div class="card-top"><div class="plat"><div class="avatar av-ru">RU</div><div><h3>Rumble</h3><div class="handle">/user/BachelorTahmid</div></div></div><span class="badge no">Unverified</span></div>
+        <p><strong>No public data found at all.</strong> Direct fetch was blocked and targeted search returned no results for this user page. No display name, bio, follower count, video list or frequency could be established — whether the channel exists, is empty, or is a placeholder cannot be determined from public sources.</p>
+        <div class="source">Supplied: <a href="https://rumble.com/user/BachelorTahmid" target="_blank" rel="noopener">rumble.com/user/BachelorTahmid</a> — fetch blocked; no search results, 7 Nov 2026.</div>
+      </article>
+
+      <!-- Bilibili -->
+      <article class="card" data-status="unverified">
+        <div class="card-top"><div class="plat"><div class="avatar av-bi">BI</div><div><h3>Bilibili</h3><div class="handle">UID 3745014349826936</div></div></div><span class="badge no">Unverified</span></div>
+        <p><strong>No public data found.</strong> Direct fetch timed out and a site-restricted search for the UID returned no results. No display name, bio, followers, videos or activity could be established, and whether the space exists or has content cannot be determined from public sources.</p>
+        <div class="source">Supplied: <a href="https://space.bilibili.com/3745014349826936" target="_blank" rel="noopener">space.bilibili.com/3745014349826936</a> — fetch timed out; no search results, 7 Nov 2026.</div>
+      </article>
+
+      <!-- LinkedIn -->
+      <article class="card" data-status="unverified">
+        <div class="card-top"><div class="plat"><div class="avatar av-li">IN</div><div><h3>LinkedIn</h3><div class="handle">/in/thafazzal-islam-thamed/</div></div></div><span class="badge no">Unverified</span></div>
+        <p><strong>Behind a login wall.</strong> Fetch failed with HTTP 999 (LinkedIn anti-bot / login wall) and search for the exact slug returned no matching profile. No headline, education, location, connections or posts are publicly visible for this URL — so no professional positioning is publicly visible at all from this check.</p>
+        <p style="margin-top:8px"><strong>Do not conflate:</strong> name search is dominated by Prof. Md Tofazzal Islam, a biotechnologist at Gazipur Agricultural University — a different spelling and a different person. The surname “Thamed” in this slug appears nowhere else in the public profiles found.</p>
+        <div class="source">Supplied: <a href="https://www.linkedin.com/in/thafazzal-islam-thamed/" target="_blank" rel="noopener">linkedin.com/in/thafazzal-islam-thamed/</a> — HTTP 999; no matching search result, 7 Nov 2026.</div>
+      </article>
+    </div>
+  </section>
+
+  <!-- YouTube deep dive -->
+  <section aria-labelledby="yt-h">
+    <div class="sec-head"><div><h2 id="yt-h">YouTube in detail — the engine room</h2><p>The only platform with visible, recent content. High volume and a real cadence, but growth is not keeping pace with output.</p></div></div>
+    <div class="two" style="align-items:start">
+      <div class="chart-card">
+        <h3>Growth: 26 Mar 2026 → 7 Nov 2026</h3>
+        <p class="cap">Two SocialCounts snapshots. In ~7.5 months: <strong style="color:var(--ink)">+78 videos, +39 subscribers, +49,137 views</strong>. Bars start at zero; each metric has its own scale because the units differ.</p>
+        <div class="legend"><span><i style="background:#c9c2ae"></i>26 Mar 2026</span><span><i style="background:var(--red)"></i>7 Nov 2026</span></div>
+        <svg viewBox="0 0 520 218" width="100%" role="img" aria-label="Grouped bar chart comparing March and November 2026: subscribers 562 to 601, videos 217 to 295, views 321716 to 370853" style="display:block">
+          <!-- Subscribers: max 601 -->
+          <text x="0" y="14" font-size="12" font-weight="700" fill="currentColor">Subscribers</text>
+          <rect x="110" y="4" width="311" height="14" rx="4" fill="#c9c2ae"/><text x="428" y="15" font-size="12" font-family="JetBrains Mono, monospace" font-weight="700" fill="currentColor">562</text>
+          <rect x="110" y="22" width="333" height="14" rx="4" fill="#d9232e"/><text x="450" y="33" font-size="12" font-family="JetBrains Mono, monospace" font-weight="700" fill="currentColor">601</text>
+          <!-- Videos: max 295, scale to same 333px width -->
+          <text x="0" y="72" font-size="12" font-weight="700" fill="currentColor">Videos</text>
+          <rect x="110" y="62" width="245" height="14" rx="4" fill="#c9c2ae"/><text x="362" y="73" font-size="12" font-family="JetBrains Mono, monospace" font-weight="700" fill="currentColor">217</text>
+          <rect x="110" y="80" width="333" height="14" rx="4" fill="#d9232e"/><text x="450" y="91" font-size="12" font-family="JetBrains Mono, monospace" font-weight="700" fill="currentColor">295</text>
+          <!-- Views: max 370853 -->
+          <text x="0" y="130" font-size="12" font-weight="700" fill="currentColor">Total views</text>
+          <rect x="110" y="120" width="289" height="14" rx="4" fill="#c9c2ae"/><text x="406" y="131" font-size="12" font-family="JetBrains Mono, monospace" font-weight="700" fill="currentColor">321,716</text>
+          <rect x="110" y="138" width="333" height="14" rx="4" fill="#d9232e"/><text x="450" y="149" font-size="12" font-family="JetBrains Mono, monospace" font-weight="700" fill="currentColor">370,853</text>
+          <text x="110" y="178" font-size="11.5" fill="#8a919e">Output grew 36% (videos) while subscribers grew 7% — volume is not the bottleneck.</text>
+          <text x="110" y="198" font-size="11.5" fill="#8a919e">Source: SocialCounts snapshots, 26 Mar &amp; 7 Nov 2026. Third-party tracker.</text>
+        </svg>
+        <div class="goals" aria-label="Published subscriber goals">
+          <span class="done">100 ✓</span><span class="done">250 ✓</span><span class="done">500 ✓</span><span class="next">750 — “so close!”</span><span>1,000</span><span>2,500</span><span>5,000</span><span>10,000</span><span>50,000 — target: before 2027</span><span>100,000 — Silver Play Button</span>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <h3>Most recent videos at the snapshot</h3>
+        <p class="cap">Channel page crawled 7 Nov 2026. Typical views: 15–400. The thrift-shop and birthday videos are the clear outliers at the top.</p>
+        <div class="video-list">
+          <div class="video"><div class="t">THE BEST THRIFT SHOP IN DHAKA YOU NEVER KNEW EXISTED!</div><div class="m"><b>403 views</b>7 days ago</div></div>
+          <div class="video"><div class="t">Melody's Unforgettable Birthday Celebration!</div><div class="m"><b>216 views</b>6 days ago</div></div>
+          <div class="video"><div class="t">Can I Survive Dhaka With 200 Taka?</div><div class="m"><b>94 views</b>1 month ago</div></div>
+          <div class="video"><div class="t">বাসায় ফিরে যা দেখলাম… <span style="color:var(--muted);font-weight:400">(home vlog, Bengali title)</span></div><div class="m"><b>83 views</b>2 weeks ago</div></div>
+          <div class="video"><div class="t">Dark Secret behind Bangladesh Railway Systems</div><div class="m"><b>48 views</b>13 days ago</div></div>
+          <div class="video"><div class="t">Raw vlog with my friend</div><div class="m"><b>33 views</b>10 days ago</div></div>
+          <div class="video"><div class="t">We didn't expect that from a Cafe 🥺 · Raw Vlog 2</div><div class="m"><b>20 views</b>1 day ago</div></div>
+          <div class="video"><div class="t">৳99 te ki pabo? Trade Fair 2026 Night</div><div class="m"><b>15 views</b>14 hours ago</div></div>
+        </div>
+        <p class="cap" style="margin:12px 0 0">Plus a run of birthday / gift videos for “her” (Melody) over the past month (39–74 views), and VALORANT livestreams such as “I'm So Lonely Tonight... 💔 | VALORANT LIVE”.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand synthesis -->
+  <section aria-labelledby="brand-h">
+    <div class="sec-head"><div><h2 id="brand-h">One brand, three strands</h2><p>What is consistent, and where the identity splits.</p></div></div>
+    <div class="two">
+      <div class="panel">
+        <h3>The core — Bachelor Tahmid</h3>
+        <ul>
+          <li><strong>Who:</strong> A young Bangladeshi man in Dhaka, an Aeronautical Engineering student, living bachelor / student life on camera.</li>
+          <li><strong>Promise:</strong> Raw and unscripted — “No script. No filter. Just real life.” Vlogs, food, friends, budget living.</li>
+          <li><strong>Audience implied:</strong> Young Bangladeshis, Dhaka students and the Bangladeshi diaspora who want relatable student / bachelor life — plus a gaming overlap.</li>
+          <li><strong>Glue:</strong> The same handle stem and cross-links tie YouTube ↔ TikTok ↔ Instagram ↔ Facebook together, with a Linktree hub on Instagram.</li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h3>The side strands</h3>
+        <ul>
+          <li><strong>Gaming — “Respawn Tahmid”:</strong> VALORANT streams and clips under separate handles — Instagram @respawntahmid (13 followers), TikTok @respawn_tahmid, a Facebook page (~500 followers), Twitch / Kick — rather than under the Bachelor Tahmid handles. The VALORANT livestream on the main YouTube channel is the bridge between the two brands. <em>Association from search results; treat exact ownership links as unconfirmed where the research marks them so.</em></li>
+          <li><strong>Trading / crypto:</strong> Telegram “Bachelor Traders” (Forex / crypto, contact @BachelorTahmid, linking YouTube @hustlerbachelors) and a vlog pitch of “Lifestyle Vlogs, Trading Grind, Airdrop Updates &amp; Real Hustle”. Not visible on the eight supplied profiles themselves.</li>
+          <li><strong>Web3:</strong> A Farcaster identity (“tahmid”, joined 6 Feb 2024, bio “Love to change”) links the same YouTube channel, bachelor_tahmid.lens and Discord bachelortahmid.</li>
+          <li><strong>Professional:</strong> LinkedIn would be this strand — but it is unverifiable, so no professional positioning is publicly visible.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Inconsistencies -->
+  <section aria-labelledby="inc-h">
+    <div class="sec-head"><div><h2 id="inc-h">Inconsistencies hurting search</h2><p>Small differences, real cost: someone searching the name finds three spellings, several similar accounts, and an unrelated professor first.</p></div></div>
+    <div class="rows">
+      <div class="row"><div class="k">Name spelling</div><div class="v"><strong>“Thafazzal Islam Thamed”</strong> (LinkedIn slug) vs <strong>“Thufazzal Islam Tahmid”</strong> (Instagram display name) vs <strong>“Tofazzal Islam”</strong> (the unrelated professor dominating name search). Surname is <strong>Tahmid</strong> on Instagram but <strong>Thamed</strong> in the LinkedIn slug.</div></div>
+      <div class="row"><div class="k">Handles</div><div class="v"><strong>bachelortahmid</strong> (YouTube / Instagram / Facebook) vs <strong>bachelor_tahmid</strong> (TikTok, Lens) vs <strong>@BachelorTahmid</strong> (X / Telegram as supplied) vs <strong>@Bachelor_Tahmid</strong> (Polyhedra list, unconfirmed) vs the gaming pair <strong>@respawntahmid / @respawn_tahmid</strong>.</div></div>
+      <div class="row"><div class="k">A wrong cross-link</div><div class="v">YouTube video descriptions write the TikTok handle <strong>without the underscore</strong> (“@bachelortahmid”), which points to the wrong handle — the real TikTok is @bachelor_tahmid.</div></div>
+      <div class="row"><div class="k">Lookalikes</div><div class="v">TikTok <strong>@bachelor.tahmid</strong> (“ONLY TAHMID MUNNA”) is a different account / person. Combined with the professor result, a new viewer can easily land on the wrong Tahmid.</div></div>
+    </div>
+  </section>
+
+  <!-- Strengths / Gaps -->
+  <section aria-labelledby="sg-h">
+    <div class="sec-head"><div><h2 id="sg-h">Strengths &amp; gaps</h2></div></div>
+    <div class="two">
+      <div class="panel good"><h3>✓ &nbsp;What is working</h3><ul>
+        <li><strong>Clear, likeable niche</strong> with distinctive “raw / unfiltered” positioning that reads the same everywhere it can be checked.</li>
+        <li><strong>Serious output:</strong> 295 videos and a genuinely regular ~2–3-per-week cadence on YouTube — consistency most small creators never reach.</li>
+        <li><strong>Cross-linking habit</strong> is already there, plus a link-in-bio hub.</li>
+        <li><strong>Multi-format range:</strong> vlog, food, thrift, geopolitics / infrastructure commentary, and gaming livestreams.</li>
+        <li><strong>An early gaming community</strong> (“Respawn Tahmid”) with its own handles and a ~500-follower Facebook page.</li>
+      </ul></div>
+      <div class="panel gap"><h3>✕ &nbsp;What is holding it back</h3><ul>
+        <li><strong>Views, not volume:</strong> most recent YouTube videos sit under 100 views despite 295 uploads; +78 videos added only ~39 subscribers in 7.5 months.</li>
+        <li><strong>TikTok &amp; Facebook are effectively dormant</strong> as audiences — 2 and 7 followers — with no visible content strategy there.</li>
+        <li><strong>Half the footprint is unverifiable:</strong> X, Rumble, Bilibili and LinkedIn returned no public presence.</li>
+        <li><strong>Split identity:</strong> name / handle inconsistencies and the separate gaming brand dilute search and invite confusion or impersonation.</li>
+        <li><strong>No visible monetisation</strong> beyond a “PR / Promotions welcome” line on TikTok — no sponsorships or press were found.</li>
+      </ul></div>
+    </div>
+    <div class="note" style="margin-top:14px"><strong>Open questions — not guessed at:</strong> Is x.com/BachelorTahmid active, or is the real X presence under another handle (the web3 link points to amir_insaan)? Do the Rumble and Bilibili accounts exist and hold content? What does the Linktree contain? Instagram bio / posts, Facebook posts and TikTok video topics were not returned by the public fetches, so they are left blank here rather than filled in.</div>
+  </section>
+
+  <footer>
+    <h3>Sources &amp; method</h3>
+    <ul>
+      <li>YouTube — <a href="https://www.youtube.com/@BachelorTahmid" target="_blank" rel="noopener">youtube.com/@BachelorTahmid</a> — index fetch crawled 7 Nov 2026 (bio excerpt, keywords, recent videos).</li>
+      <li>SocialCounts — <a href="https://socialcounts.org/youtube-live-subscriber-count/UCUpdl6H7lzzPvQEzGWaQ5Cw" target="_blank" rel="noopener">socialcounts.org/youtube-live-subscriber-count/UCUpdl6H7lzzPvQEzGWaQ5Cw</a> — 601 subs / 295 videos / 370,853 views, crawled 7 Nov 2026; earlier snapshot 26 Mar 2026 via search. Third-party tracker, not YouTube itself.</li>
+      <li>TikTok — <a href="https://www.tiktok.com/@bachelor_tahmid" target="_blank" rel="noopener">tiktok.com/@bachelor_tahmid</a> · Instagram — <a href="https://www.instagram.com/bachelortahmid/" target="_blank" rel="noopener">instagram.com/bachelortahmid</a> · Facebook — <a href="https://www.facebook.com/bachelortahmid" target="_blank" rel="noopener">facebook.com/bachelortahmid</a> — index fetches read 7 Nov 2026.</li>
+      <li>X, Rumble, Bilibili, LinkedIn — supplied URLs checked 7 Nov 2026; fetches blocked / timed out / login-walled as noted per profile, with no matching public data in search.</li>
+      <li>Adjacent identities — web3.bio Farcaster profile “tahmid” (<a href="https://web3.bio/tahmid.farcaster" target="_blank" rel="noopener">web3.bio/tahmid.farcaster</a>), Telegram “Bachelor Traders” (<a href="https://t.me/BachelorTraders" target="_blank" rel="noopener">t.me/BachelorTraders</a>), and Respawn Tahmid gaming handles via search — associations marked unconfirmed in the research where ownership was not established.</li>
+    </ul>
+    <p class="small">Method: signed-out public pages and web search only — no login, no private data. Verification rests on index fetches dated 7 Nov 2026 rather than live reads, so counts may have moved since. “Unverified” throughout means no public data was found; it is not proof an account does not exist.</p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var buttons = document.querySelectorAll('.filters button');
+  var cards = document.querySelectorAll('#platformGrid .card');
+  buttons.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      buttons.forEach(function(b){ b.classList.remove('active'); });
+      btn.classList.add('active');
+      var f = btn.getAttribute('data-filter');
+      cards.forEach(function(card){
+        var show = (f === 'all') || (card.getAttribute('data-status') === f);
+        card.classList.toggle('hidden', !show);
+      });
+    });
+  });
+})();
+</script>
+</body>
+</html>

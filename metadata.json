@@ -1,0 +1,6 @@
+{
+  "name": "Bachelor Tahmid Showcase",
+  "description": "Viral 3D motion-graphics showcase website for Bachelor Tahmid (Thafazzal Islam Thamed) - raw Dhaka bachelor vlogs, street food hunts, and real stories.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
