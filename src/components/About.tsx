@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, GraduationCap, Camera, ExternalLink, X } from 'lucide-react';
 import { CREATOR_INFO, GALLERY_PHOTOS } from '../data/creator';
+import { LinkedInLogo } from './SocialLogos';
 
 export const About: React.FC = () => {
   const [activePhoto, setActivePhoto] = useState<string | null>(null);
@@ -89,7 +90,7 @@ export const About: React.FC = () => {
               </div>
             </div>
 
-            {/* Location & Linktree bar */}
+            {/* Location & LinkedIn Profile bar */}
             <div className="rounded-xl p-4 bg-[#101018] border border-white/10 flex flex-wrap items-center justify-between gap-4">
               <div className="flex items-center gap-2.5">
                 <MapPin className="w-4 h-4 text-[#D4FF3F]" />
@@ -99,12 +100,14 @@ export const About: React.FC = () => {
                 </div>
               </div>
               <a
-                href="https://linktr.ee/bachelortahmid"
+                href="https://www.linkedin.com/in/thafazzal-islam-thamed-502b77385/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-xs font-mono font-medium text-white transition-colors"
+                className="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg bg-[#0A66C2]/15 hover:bg-[#0A66C2]/25 border border-[#0A66C2]/40 text-xs font-mono font-medium text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#0A66C2]"
+                title="View Thafazzal Islam Thamed on LinkedIn"
               >
-                <span>View Linktree</span>
+                <LinkedInLogo className="w-4 h-4 flex-shrink-0" />
+                <span>LinkedIn Profile</span>
                 <ExternalLink className="w-3.5 h-3.5 text-zinc-400" />
               </a>
             </div>

@@ -97,3 +97,13 @@ test('Social platforms contain valid links without dummy URLs', () => {
     assert.notEqual(plat.url, '#');
   }
 });
+
+test('Linktree is removed from website and exactly 8 official platforms remain', () => {
+  const linktree = SOCIAL_PLATFORMS.find((s) => s.id === 'linktree' || s.name.toLowerCase().includes('linktree'));
+  assert.equal(linktree, undefined, 'Linktree must be removed from social platforms');
+  assert.equal(SOCIAL_PLATFORMS.length, 8, 'Must have exactly 8 official platforms');
+  
+  const linkedin = SOCIAL_PLATFORMS.find((s) => s.id === 'linkedin');
+  assert.ok(linkedin, 'LinkedIn must be present in official platforms');
+  assert.equal(linkedin?.url, 'https://www.linkedin.com/in/thafazzal-islam-thamed-502b77385/');
+});

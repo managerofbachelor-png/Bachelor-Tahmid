@@ -219,17 +219,6 @@ export const SOCIAL_PLATFORMS: SocialLink[] = [
     statusText: "Official Link",
     accentColor: "#0A66C2",
   },
-  {
-    id: "linktree",
-    name: "Linktree",
-    handle: "linktr.ee/bachelortahmid",
-    url: "https://linktr.ee/bachelortahmid",
-    followers: "All profile links",
-    metricsLabel: "Central navigation hub",
-    verified: true,
-    statusText: "Hub Link",
-    accentColor: "#39E09B",
-  },
 ];
 
 export const TOP_VIRAL_REELS: ViralReel[] = [
